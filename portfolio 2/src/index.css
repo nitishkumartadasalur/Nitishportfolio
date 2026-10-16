@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@theme { --font-sans: "Inter", system-ui, sans-serif; --font-serif: "Playfair Display", Georgia, serif; --color-cream: #f1e4e0; --color-paper: #f8efec; --color-wine: #4a1a26; --color-ink: #2b1118; }
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+body { background: #f1e4e0; color: #2b1118; overflow-x: hidden; }
+.display { font-family: var(--font-serif); font-weight: 900; text-transform: uppercase; letter-spacing: .03em; line-height: 1.05; }
+.label { font-size: 11px; letter-spacing: .35em; text-transform: uppercase; }
+.vtext { writing-mode: vertical-rl; transform: rotate(180deg); }
+.caret { display: inline-block; width: 2px; height: 1em; background: #4a1a26; margin-left: 4px; vertical-align: -2px; animation: blink 1s steps(2) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
